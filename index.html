@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+</head>
+
+<body>
+    <!-- Swiper容器 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <!-- 欢迎界面 -->
+            <div class="swiper-slide first">
+                <div class="top">
+                    <img class="img_0" src="img/00-1.png" alt="" />
+                    <img class="img_1" src="img/00-2.png" alt="" />
+                    <span class="top1"></span>
+                </div>
+
+            </div>
+            
+            <!-- 第一页 -->
+            <div class="swiper-slide one"></div>
+
+            <!-- 第二页 -->
+            <div class="swiper-slide two">
+                <div class="top ani" swiper-animate-effect="fadeInRight" swiper-animate-duration='1.5s' swiper-animate-delay="1s">
+                    <img src="img/02-1.png" alt="" />
+                </div>
+                <div class="bottom_2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration='1.5s' swiper-animate-delay="1.5s">
+                    <img src="img/02-2.png" alt="" />
+                </div>
+                <div class="bottom_1 ani" swiper-animate-effect="fadeOut" swiper-animate-duration='0s' swiper-animate-delay="1.5s">
+                    <img src="img/02-2.png" alt="" />
+                </div>
+            </div>
+
+            <!-- 第三页 -->
+            <div class="swiper-slide three">
+                <div class="top_1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration='1.5s' swiper-animate-delay="1.5s">
+                    <img src="img/03-1.png" alt="" />
+                </div>
+                <div class="top_2 ani" swiper-animate-effect="fadeOut" swiper-animate-duration='0s' swiper-animate-delay="1.5s">
+                    <img src="img/03-1.png" alt="" />
+                </div>
+                <div class="bottom ani" swiper-animate-effect="fadeInRight" swiper-animate-duration='1.5s' swiper-animate-delay="1s">
+                    <img src="img/03-2.png" alt="" />
+                </div>
+            </div>
+
+            <!-- 第四页 -->
+            <div class="swiper-slide four">
+                <div class="top ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration='1.5s' swiper-animate-delay="1s">
+                    <img src="img/04-1.png" alt="" />
+                </div>
+                <div class="bottom_1 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration='1.5s' swiper-animate-delay="1.5s">
+                    <img src="img/04-2.png" alt="" />
+                </div>
+                <div class="bottom_2 ani" swiper-animate-effect="fadeOut" swiper-animate-duration='0s' swiper-animate-delay="1.5s">
+                    <img src="img/04-2.png" alt="" />
+                </div>
+            </div>
+
+            <!-- 第五页 -->
+            <div class="swiper-slide five">
+                <div class="top_1 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration='1.5s' swiper-animate-delay="1.5s">
+                    <img src="img/05-1.png" alt="" />
+                </div>
+                <div class="top_2 ani" swiper-animate-effect="fadeOut" swiper-animate-duration='0s' swiper-animate-delay="1.5s">
+                    <img src="img/05-1.png" alt="" />
+                </div>
+                <div class="bottom ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration='1.5s' swiper-animate-delay="1s">
+                    <img src="img/05-2.png" alt="" />
+                </div>
+            </div>
+
+            <!-- 第六页 -->
+            <div class="swiper-slide six">
+                <div class="top ani" swiper-animate-effect="fadeIn" swiper-animate-duration='1.5s' swiper-animate-delay="0.3">
+                    <img src="img/06-1.png" alt="" />
+                </div>
+                <div class="middle ani" swiper-animate-effect="rubberBand" swiper-animate-duration='1.5s' swiper-animate-delay="0.3s">
+                    <img src="img/06-2.png" alt="" />
+                </div>
+                <div class="bottom ani" swiper-animate-effect="pulse" swiper-animate-duration='1.5s' swiper-animate-delay="0.3s">
+                    <img src="img/school.png" alt="" />
+                </div>
+                <p class="itany_font">长按二维码识别进入公众号</p>
+            </div>
+        </div>
+        <!-- 显示当前条数 -->
+        <!-- <div class="swiper-pagination"></div> -->
+    <!-- 底部移动的图标 -->
+    <div class="icon11">
+        <span class="span11"></span>
+    </div>
+    </div>
+    <!--音乐区域开始-->
+    <div id="music">
+        <img src="img/music.gif" alt="" class="music_bg" />
+        <img src="img/music_off.png" alt="" class="music_pic" />
+        <audio src="img/bgmusic.mp3" autoplay="autoplay" loop="loop" class="aud"></audio>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/swiper-3.2.7.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- 欢迎界面动效 -->
+    <script>
+    function lastPercent () {
+        $('.top1').animate({
+            'width':'0',
+            'margin-left':'314px'
+        }, 2000)
+    }
+    lastPercent();
+    </script>
+
+
+</body>
+
+</html>
